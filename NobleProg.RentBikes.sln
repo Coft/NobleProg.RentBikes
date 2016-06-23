@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NobleProg.RentBikes.WPFClient", "NobleProg.RentBikes.WPFClient\NobleProg.RentBikes.WPFClient.csproj", "{ECAD1091-893D-4A0C-8D81-A4504F4F082B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NobleProg.RentBikes.Resources", "NobleProg.RentBikes.Resources\NobleProg.RentBikes.Resources.csproj", "{DE252CFE-8AC2-4D48-B4AA-C6F5BB66FFED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NobleProg.RentBikes.Models", "NobleProg.RentBikes.Models\NobleProg.RentBikes.Models.csproj", "{4131A3D8-5601-4439-A9B4-F642BE27135C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NobleProg.RentBikes.ViewModels", "NobleProg.RentBikes.ViewModels\NobleProg.RentBikes.ViewModels.csproj", "{7317CD42-D376-4B19-9D72-4AC2EE541E27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECAD1091-893D-4A0C-8D81-A4504F4F082B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAD1091-893D-4A0C-8D81-A4504F4F082B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAD1091-893D-4A0C-8D81-A4504F4F082B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAD1091-893D-4A0C-8D81-A4504F4F082B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE252CFE-8AC2-4D48-B4AA-C6F5BB66FFED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE252CFE-8AC2-4D48-B4AA-C6F5BB66FFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE252CFE-8AC2-4D48-B4AA-C6F5BB66FFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE252CFE-8AC2-4D48-B4AA-C6F5BB66FFED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4131A3D8-5601-4439-A9B4-F642BE27135C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4131A3D8-5601-4439-A9B4-F642BE27135C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4131A3D8-5601-4439-A9B4-F642BE27135C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4131A3D8-5601-4439-A9B4-F642BE27135C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7317CD42-D376-4B19-9D72-4AC2EE541E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7317CD42-D376-4B19-9D72-4AC2EE541E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7317CD42-D376-4B19-9D72-4AC2EE541E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7317CD42-D376-4B19-9D72-4AC2EE541E27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

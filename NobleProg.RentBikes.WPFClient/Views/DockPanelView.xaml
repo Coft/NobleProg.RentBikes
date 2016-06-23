@@ -1,0 +1,16 @@
+﻿<Window x:Class="NobleProg.RentBikes.WPFClient.Views.DockPanelView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NobleProg.RentBikes.WPFClient.Views"
+        mc:Ignorable="d"
+        Title="DockPanelView" Height="300" Width="300">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <DockPanel>
+            <Button DockPanel.Dock="Bottom" Content="Me too please!"></Button>
+            <Button Content="Click meeeee!"></Button>
+            <Button Content="Me too please 3!"></Button>
+        </DockPanel>
+    </ScrollViewer>
+</Window>

@@ -1,0 +1,59 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:m="clr-namespace:NobleProg.RentBikes.Models;assembly=NobleProg.RentBikes.Models"
+                    xmlns:local="clr-namespace:NobleProg.RentBikes.WPFClient.Themes">
+    <BitmapImage x:Key="MaintaanceImage"  UriSource="../Assets/SecurityAndMaintenance.png" />
+    <SolidColorBrush x:Key="MyBackground" >Blue</SolidColorBrush>
+    <SolidColorBrush x:Key="MyForeground" >Black</SolidColorBrush>
+    <Style x:Key="MyBaseStyle" TargetType="{x:Type Button}">
+        <Setter Property="Foreground" Value="{StaticResource MyForeground}"/>
+        <Setter Property="Background" Value="{StaticResource MyBackground}"/>
+        <Setter Property="Width" Value="100"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Background" Value="Red"/>
+                <Setter Property="Foreground" Value="Yellow"/>
+                <Setter Property="Margin" Value="10"/>
+                <!--<Setter Property="IsEnabled" Value="false"/>-->
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MyBaseStyle}"/>
+    <Style x:Key="ConfirmButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource MyBaseStyle}">
+        <Setter Property="Background" Value="Green"/>
+    </Style>
+
+    <ControlTemplate x:Key="MyButtonTemplate" TargetType="{x:Type Button}">
+        <Border CornerRadius="90" BorderBrush="{TemplateBinding Foreground}" BorderThickness="2"
+                Background="{TemplateBinding Background}">
+            <!--<TextBlock Foreground="{TemplateBinding Foreground}" Text="Hello"/>-->
+            <ContentPresenter HorizontalAlignment="Center"
+                              VerticalAlignment="Center">
+                
+            </ContentPresenter>
+            <!--<Image Width="40" Source="{StaticResource MaintaanceImage}"></Image>-->
+            
+        </Border>
+    </ControlTemplate>
+
+    <Style x:Key="StationStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="Blue"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsActive}" Value="false">
+                <Setter Property="Foreground" Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    
+    <DataTemplate DataType="{x:Type m:Station}">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding StationNumber, StringFormat=({0})}"/>
+            <TextBlock Style="{StaticResource StationStyle}" 
+                       Text="{Binding StationName, StringFormat=-{0}}"/>
+            <!-- Do not use the following code line in production-->
+            <TextBlock Text="{Binding DataContext.CurrentLocation.Longitude,RelativeSource={RelativeSource FindAncestor,AncestorType=Window}}" />
+        </StackPanel>
+    </DataTemplate>
+
+
+</ResourceDictionary>
